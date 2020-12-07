@@ -18,6 +18,8 @@ ngOnInit():void{
     this.charactersArray.push(new Usuario('Roberto','Perez', 34, 'Perdogarcia@gmail.com','asd'));
 
 
+    this.characterSelected = JSON.parse(Usuario);
+
 }
 
 
