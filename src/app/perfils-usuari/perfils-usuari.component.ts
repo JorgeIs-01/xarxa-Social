@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter ,Input, OnInit, Output } from '@angular/core';
+import { Usuario } from '../models/usuario.model';
 
 @Component({
   selector: 'app-perfils-usuari',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilsUsuariComponent implements OnInit {
 
+  @Input() usuario:Usuario;
+  @Output() eliminarus: EventEmitter<Usuario> = new EventEmitter<Usuario>();
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  eliminarUsuario(): void{
+    this.eliminarus.emit(this.usuario);
+  }
 }
