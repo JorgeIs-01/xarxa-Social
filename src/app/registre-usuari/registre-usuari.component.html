@@ -64,7 +64,7 @@
         [ngClass]="{ 'is-invalid': submitted && f.correo.errors }"/>
 
       <div *ngIf="submitted && f.contrasena.errors" class="invalid-feedback">
-        <div *ngIf="f.contrasena.errors.required">El correo es obligatorio</div>
+        <div *ngIf="f.contrasena.errors.required">La contraseña es obligatoria</div>
         <!-- <div *ngIf="f.contrasena.errors.email">Tienes que introducir un minimo de 5 caracteres y un maximo de 15</div> -->
       </div>
     </div>
@@ -79,7 +79,7 @@
         [ngClass]="{ 'is-invalid': submitted && f.confirmarContrasena.errors }"/>
 
       <div *ngIf="submitted && f.confirmarContrasena.errors" class="invalid-feedback">
-        <div *ngIf="f.confirmarContrasena.errors.required">El contraseña es obligatorio</div>
+        <div *ngIf="f.confirmarContrasena.errors.required">La contraseña es obligatoria</div>
         <div *ngIf="f.confirmarContrasena.errors.confirmarContrasenas">No coinciden las contraseñas</div>
       </div>
     </div>
