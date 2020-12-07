@@ -16,7 +16,7 @@ export class PerfilsUsuariComponent implements OnInit {
   }
 
   deleteUsuario(): void {
-    this.deleteEvent.emit(this.Usuario);
+   // this.deleteEvent.emit(this.Usuario);
   }
 
 }
