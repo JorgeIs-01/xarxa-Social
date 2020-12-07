@@ -129,6 +129,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "xarxa-Social"
+    }
+  },
+  "defaultProject": "xarxa-Social",
+  "cli": {
+    "analytics": "c7c7e562-0de2-43ff-a44e-82ac1321e0e4"
+  }
 }
