@@ -6,7 +6,11 @@ import { AppComponent } from './app.component';
 import { PerfilsUsuariComponent } from './perfils-usuari/perfils-usuari.component';
 import { RegistreUsuariComponent } from './registre-usuari/registre-usuari.component';
 import { PanellAdministradorComponent } from './panell-administrador/panell-administrador.component';
+<<<<<<< Updated upstream
 import { from } from 'rxjs';
+=======
+import { FolderComponent } from './header/folder/folder.component';
+>>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
