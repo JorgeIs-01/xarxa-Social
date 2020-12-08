@@ -4,7 +4,10 @@ export class Usuario{
     public apellido: string,
     public edad: number,
     public correo: string,
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Jorge
     public imagen: string
   ){}
 }

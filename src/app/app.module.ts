@@ -7,13 +7,15 @@ import { PerfilsUsuariComponent } from './perfils-usuari/perfils-usuari.componen
 import { RegistreUsuariComponent } from './registre-usuari/registre-usuari.component';
 import { PanellAdministradorComponent } from './panell-administrador/panell-administrador.component';
 import { from } from 'rxjs';
+import { FolderComponent } from './header/folder/folder.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PerfilsUsuariComponent,
     RegistreUsuariComponent,
-    PanellAdministradorComponent
+    PanellAdministradorComponent,
+    FolderComponent
   ],
   imports: [
     BrowserModule,
