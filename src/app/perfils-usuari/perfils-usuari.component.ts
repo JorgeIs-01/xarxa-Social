@@ -8,15 +8,27 @@ import { Usuario } from '../models/usuario.model';
 })
 export class PerfilsUsuariComponent implements OnInit {
 
+  us = [new Usuario()];
   @Input() usuario:Usuario;
   @Output() eliminarus: EventEmitter<Usuario> = new EventEmitter<Usuario>();
 
-  constructor() { }
+  constructor() {
+
+
+   }
+   charactersArray: Usuario[] = [];
 
   ngOnInit(): void {
+    this.us[0].nombre='Perico';
+    this.us[0].apellido='de los palotes';
+    this.us[0].edad=22;
+    this.us[0].correo="hola@gmail.com";
+    this.us[0].imagen="hola";
+    this.charactersArray.push(new Usuario('Pedro','Garcia', 34, 'Perdogarcia@gmail.com','asd' ));
+    this.charactersArray.push(new Usuario('Juan','Rodriguez', 34, 'Perdogarcia@gmail.com','asd' ));
+    this.charactersArray.push(new Usuario('Roberto','Perez', 34, 'Perdogarcia@gmail.com','asd'));
+
   }
 
-  eliminarUsuario(): void{
-    this.eliminarus.emit(this.usuario);
-  }
+
 }
