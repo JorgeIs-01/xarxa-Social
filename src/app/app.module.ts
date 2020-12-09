@@ -6,13 +6,16 @@ import { AppComponent } from './app.component';
 import { PerfilsUsuariComponent } from './perfils-usuari/perfils-usuari.component';
 import { RegistreUsuariComponent } from './registre-usuari/registre-usuari.component';
 import { PanellAdministradorComponent } from './panell-administrador/panell-administrador.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PerfilsUsuariComponent,
     RegistreUsuariComponent,
-    PanellAdministradorComponent
+    PanellAdministradorComponent,
+    HeaderComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

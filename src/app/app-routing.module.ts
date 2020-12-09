@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'perfils-usuari', component: PerfilsUsuariComponent },
   { path: 'panell-administrador', component: PanellAdministradorComponent},
   {path: 'registre-usuari', component: RegistreUsuariComponent},
+  {path: 'registre-usuari', component: RegistreUsuariComponent}
 ];
 
 @NgModule({
